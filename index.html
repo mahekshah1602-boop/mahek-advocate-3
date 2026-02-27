@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shah Mahek | Advocate</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    margin: 0;
+    background: #111;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Flip Card Container */
+.flip-card {
+    background-color: transparent;
+    width: 350px;
+    height: 480px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+}
+
+/* FRONT SIDE */
+.flip-card-front {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.name {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.title {
+    margin-top: 10px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+/* BACK SIDE */
+.flip-card-back {
+    background: white;
+    color: #000;
+    transform: rotateY(180deg);
+    padding: 25px;
+    font-size: 14px;
+    overflow-y: auto;
+}
+
+.info {
+    margin-bottom: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.call-btn {
+    background: black;
+    color: white;
+}
+
+.whatsapp-btn {
+    background: #25D366;
+    color: white;
+}
+
+.email-btn {
+    background: #444;
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 12px;
+    color: gray;
+}
+
+</style>
+</head>
+<body>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+
+    <!-- FRONT SIDE -->
+    <div class="flip-card-front">
+
+        <!-- YOUR LOGO (Upload logo image to GitHub and name it logo.png) -->
+        <img src="logo.png" class="logo" alt="Advocate Logo">
+
+        <div class="name">SHAH MAHEK</div>
+        <div>B.A., LL.B</div>
+        <div class="title">ADVOCATE</div>
+
+    </div>
+
+    <!-- BACK SIDE -->
+    <div class="flip-card-back">
+
+        <div class="info">📞 <a href="tel:8688383091">8688383091</a></div>
+
+        <div class="info">🟢 <a href="https://wa.me/918688383091" target="_blank">WhatsApp Chat</a></div>
+
+        <div class="info">📧 <a href="mailto:mahekshahadv@gmail.com">mahekshahadv@gmail.com</a></div>
+
+        <hr>
+
+        <div class="info">📍 <a href="https://maps.app.goo.gl/WL5qneoiymb6cc4eA" target="_blank">
+        Office Location</a></div>
+
+        <div class="info">🏠 <a href="https://maps.app.goo.gl/SkoedJ32FtMqyDLa8" target="_blank">
+        Residence Location</a></div>
+
+        <hr>
+
+        <div class="info">🕒 Monday – Saturday<br>7:30 PM – 10:30 PM</div>
+
+        <a class="button call-btn" href="tel:8688383091">📞 Call Now</a>
+        <a class="button whatsapp-btn" href="https://wa.me/918688383091" target="_blank">🟢 WhatsApp</a>
+        <a class="button email-btn" href="mailto:mahekshahadv@gmail.com">📧 Send Email</a>
+
+        <div class="footer">
+            © 2026 Shah Mahek | Advocate
+        </div>
+
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
